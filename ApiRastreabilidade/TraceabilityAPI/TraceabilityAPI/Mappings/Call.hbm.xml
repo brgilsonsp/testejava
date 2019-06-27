@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                  assembly="TraceabilityAPI"
+                  namespace="TraceabilityAPI.Models">
+  
+  <class name="Call" table="callTrack">
+    
+    <id name="Id" column="id" type="Int64">
+      <generator class="identity" />
+    </id>    
+    <property name="UCIDOrigin" unique="true" column="ucidOrigin" />
+    <property name="CallIdOrigin" column="callidOrigin" />
+    
+    <property name="UCIDTrack" column="ucidTrack" />
+    <property name="CallIdTrack" column="callidTrack" />
+    <property name="DateCallTrack" column="dataChamadaTrack" />
+    <property name="TypeCallTrack" column="tipoChamadaTrack" />
+    <property name="IsRecordedECH" column="isRecordedECH" />
+    <property name="Observation" column="observation" />
+    <property name="DateSaved" column="dateSaved" />
+    <property name="DateTracked" column="dateTracked" />
+  
+</class>
+  
+</hibernate-mapping>

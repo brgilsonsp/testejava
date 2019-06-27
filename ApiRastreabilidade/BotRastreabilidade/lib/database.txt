@@ -1,0 +1,9 @@
+ALTER TABLE [dbo].[tb_ECH] ADD ucid_track [varchar](20) NULL
+GO
+ALTER TABLE [dbo].[tb_ECH] ADD callid_track [int] NULL
+GO
+ALTER TABLE [dbo].[tb_ECH] ADD type_call_track [varchar](50) NULL
+GO
+ALTER TABLE [dbo].[tb_ECH] ADD dtime_call_track [datetime] NULL
+GO
+ALTER TABLE [dbo].[tb_ECH] ADD callid_track_ech [int] NULL

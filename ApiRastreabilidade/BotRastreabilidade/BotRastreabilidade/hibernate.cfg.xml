@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+
+  <session-factory>
+
+    <property name="connection.driver_class">
+      NHibernate.Driver.SqlClientDriver
+    </property>
+
+    <property name="connection.provider">
+      NHibernate.Connection.DriverConnectionProvider
+    </property>
+
+    <property name="dialect">
+      NHibernate.Dialect.MsSql2012Dialect
+    </property>
+
+    <property name="connection.connection_string">
+      Server=10.73.20.135;Database=BASE_TELEFONIA; Uid=betta; Pwd=(betta*2016);
+    </property>
+
+    <property name="show_sql">
+      false
+    </property>
+    
+    <property name="command_timeout">
+      600
+    </property>
+
+  </session-factory>
+  
+</hibernate-configuration>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                  assembly="BotRastreabilidade"
+                  namespace="BotRastreabilidade.Models">
+
+  <class name="Ech" table="tb_ech">
+
+    <id name="id" column="id" />
+    <property name="callid" column="callid" />
+    <property name="ucid" column="ucid" />
+    <property name="ucid_track" column="ucid_track" />
+    <property name="callid_track" column="callid_track" />
+    <property name="type_call_track" column="type_call_track" />
+    <property name="dtime_call_track" column="dtime_call_track" type="datetime" />
+    <property name="segment" column="segment" type="short" />
+    <property name="callid_track_ech" column="callid_track_ech" />
+    
+  </class>
+  
+</hibernate-mapping>
